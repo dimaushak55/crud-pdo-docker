@@ -16,25 +16,25 @@
 
 ## Структура проєкту
 
-crud-pdo-docker/
-├── app/
-│ ├── public/
-│ │ └── index.php # Єдина точка входу (роутінг)
-│ ├── src/
-│ │ ├── Database.php # Підключення до БД через PDO
-│ │ ├── ClientDAO.php # CRUD для Client
-│ │ ├── ProductDAO.php # CRUD для Product
-│ │ ├── OrderDAO.php # CRUD для Order
-│ │ └── DeliveryDAO.php # CRUD для Delivery
-│ ├── views/
-│ │ ├── client/ # Шаблони client
-│ │ ├── product/ # Шаблони product
-│ │ ├── order/ # Шаблони order
-│ │ └── delivery/ # Шаблони delivery
-├── .nginx/
-│ └── default.conf # Конфігурація Nginx
-├── docker-compose.yml # Docker-оточення
-└── README.md
+crud-pdo-docker/                              
+├── app/                                      
+│ ├── public/                                  
+│ │ └── index.php # Єдина точка входу (роутінг)    
+│ ├── src/                                        
+│ │ ├── Database.php # Підключення до БД через PDO       
+│ │ ├── ClientDAO.php # CRUD для Client           
+│ │ ├── ProductDAO.php # CRUD для Product         
+│ │ ├── OrderDAO.php # CRUD для Order             
+│ │ └── DeliveryDAO.php # CRUD для Delivery        
+│ ├── views/                                     
+│ │ ├── client/ # Шаблони client                 
+│ │ ├── product/ # Шаблони product               
+│ │ ├── order/ # Шаблони order                   
+│ │ └── delivery/ # Шаблони delivery                
+├── .nginx/                                     
+│ └── default.conf # Конфігурація Nginx          
+├── docker-compose.yml # Docker-оточення          
+└── README.md                                   
 
 ---
 
