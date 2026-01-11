@@ -83,6 +83,7 @@ crud-pdo-docker/
 
 ### 2️ Клонування репозиторію
 git clone https://github.com/dimaushak55/crud-pdo-docker.git
+
 cd crud-pdo-docker
 
 ---
@@ -125,6 +126,9 @@ http://localhost:8080
 
 ## Логування
 Перегляд логів Docker:
+
 docker logs crud-pdo-php-1
+
 docker logs crud-pdo-db-1
+
 docker logs crud-pdo-nginx-1
