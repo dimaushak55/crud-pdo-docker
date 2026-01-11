@@ -31,6 +31,7 @@ crud-pdo-docker/
 │ │ ├── product/ # Шаблони product               
 │ │ ├── order/ # Шаблони order                   
 │ │ └── delivery/ # Шаблони delivery                
+│ └── .env                                         
 ├── .nginx/                                     
 │ └── default.conf # Конфігурація Nginx          
 ├── docker-compose.yml # Docker-оточення          
