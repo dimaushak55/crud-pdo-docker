@@ -16,25 +16,26 @@
 
 ## Структура проєкту
 
-crud-pdo-docker/
-├── app/
-│ ├── public/
-│ │ └── index.php # Єдина точка входу (роутінг)
-│ ├── src/
-│ │ ├── Database.php # Підключення до БД через PDO
-│ │ ├── ClientDAO.php # CRUD для Client
-│ │ ├── ProductDAO.php # CRUD для Product
-│ │ ├── OrderDAO.php # CRUD для Order
-│ │ └── DeliveryDAO.php # CRUD для Delivery
-│ ├── views/
-│ │ ├── client/ # Шаблони client
-│ │ ├── product/ # Шаблони product
-│ │ ├── order/ # Шаблони order
-│ │ └── delivery/ # Шаблони delivery
-├── .nginx/
-│ └── default.conf # Конфігурація Nginx
-├── docker-compose.yml # Docker-оточення
-└── README.md
+crud-pdo-docker/                              
+├── app/                                      
+│ ├── public/                                  
+│ │ └── index.php # Єдина точка входу (роутінг)    
+│ ├── src/                                        
+│ │ ├── Database.php # Підключення до БД через PDO       
+│ │ ├── ClientDAO.php # CRUD для Client           
+│ │ ├── ProductDAO.php # CRUD для Product         
+│ │ ├── OrderDAO.php # CRUD для Order             
+│ │ └── DeliveryDAO.php # CRUD для Delivery        
+│ ├── views/                                     
+│ │ ├── client/ # Шаблони client                 
+│ │ ├── product/ # Шаблони product               
+│ │ ├── order/ # Шаблони order                   
+│ │ └── delivery/ # Шаблони delivery                
+│ └── .env                                         
+├── .nginx/                                     
+│ └── default.conf # Конфігурація Nginx          
+├── docker-compose.yml # Docker-оточення          
+└── README.md                                   
 
 ---
 
@@ -82,6 +83,7 @@ crud-pdo-docker/
 
 ### 2️ Клонування репозиторію
 git clone https://github.com/dimaushak55/crud-pdo-docker.git
+
 cd crud-pdo-docker
 
 ---
@@ -124,6 +126,9 @@ http://localhost:8080
 
 ## Логування
 Перегляд логів Docker:
+
 docker logs crud-pdo-php-1
+
 docker logs crud-pdo-db-1
+
 docker logs crud-pdo-nginx-1
