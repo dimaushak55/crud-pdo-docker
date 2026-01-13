@@ -4,10 +4,14 @@
 <ul>
 <?php foreach ($products as $p): ?>
   <li>
-    <?= $p['name'] ?> (<?= $p['price'] ?>)
-    <a href="?entity=product&action=view&id=<?= $p['id'] ?>">👁</a>
-    <a href="?entity=product&action=edit&id=<?= $p['id'] ?>">✏️</a>
-    <a href="?entity=product&action=delete&id=<?= $p['id'] ?>">❌</a>
+    <?= htmlspecialchars($p['name'], ENT_QUOTES, 'UTF-8') ?>
+    (
+    <?= htmlspecialchars((string)$p['price'], ENT_QUOTES, 'UTF-8') ?>
+    )
+
+    <a href="?entity=product&action=view&id=<?= (int)$p['id'] ?>">👁</a>
+    <a href="?entity=product&action=edit&id=<?= (int)$p['id'] ?>">✏️</a>
+    <a href="?entity=product&action=delete&id=<?= (int)$p['id'] ?>">❌</a>
   </li>
 <?php endforeach; ?>
 </ul>

@@ -4,10 +4,12 @@
 <ul>
 <?php foreach ($deliveries as $d): ?>
   <li>
-    Order #<?= $d['order_id'] ?> — <?= $d['date'] ?>
-    <a href="?entity=delivery&action=view&id=<?= $d['id'] ?>">👁</a>
-    <a href="?entity=delivery&action=edit&id=<?= $d['id'] ?>">✏️</a>
-    <a href="?entity=delivery&action=delete&id=<?= $d['id'] ?>">❌</a>
+    Order #<?= (int)$d['order_id'] ?> —
+    <?= htmlspecialchars($d['date'], ENT_QUOTES, 'UTF-8') ?>
+
+    <a href="?entity=delivery&action=view&id=<?= (int)$d['id'] ?>">👁</a>
+    <a href="?entity=delivery&action=edit&id=<?= (int)$d['id'] ?>">✏️</a>
+    <a href="?entity=delivery&action=delete&id=<?= (int)$d['id'] ?>">❌</a>
   </li>
 <?php endforeach; ?>
 </ul>
